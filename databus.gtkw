@@ -1,0 +1,33 @@
+[*]
+[*] GTKWave Analyzer v3.3.86 (w)1999-2017 BSI
+[*] Mon Feb  4 04:19:21 2019
+[*]
+[dumpfile] "/home/vak/Project/Besm-6/avalanche/output.vcd"
+[dumpfile_mtime] "Mon Feb  4 04:12:48 2019"
+[dumpfile_size] 46667
+[savefile] "/home/vak/Project/Besm-6/avalanche/databus.gtkw"
+[timestart] 0
+[size] 1283 600
+[pos] 2 3
+*-12.175311 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1
+[sst_width] 223
+[signals_width] 174
+[sst_expanded] 1
+[sst_vpaned_height] 152
+@28
+testbench.reset
+testbench.clk
+@22
+testbench.o_addr[31:0]
+@28
+testbench.o_read
+testbench.o_write
+@23
+testbench.o_data_write[31:0]
+@22
+testbench.i_data_read[31:0]
+@28
+testbench.i_done
+testbench.i_interrupt
+[pattern_trace] 1
+[pattern_trace] 0

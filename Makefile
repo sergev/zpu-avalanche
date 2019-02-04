@@ -2,9 +2,11 @@
 # Use Altera ModelSim:
 #   module load modelsim/18.1
 #
-SOURCES         = zpu_core_defines.v \
-                  zpu_core_rom.v \
-                  zpu_core.v
+SOURCES         = zpu_alu.sv \
+                  zpu_core.sv \
+                  zpu_rom.sv \
+                  testbench.sv \
+                  memory.sv
 
 all:            work
 
@@ -16,7 +18,7 @@ work:           $(SOURCES)
 		vlog -sv $(SOURCES)
 
 run:            work
-		vsim -c -l run.log -do 'run 100000us; quit' testbench
+		vsim -c -l run.log -do 'run 1us; quit' testbench +dump
 
 view:
-		gtkwave testbench.vcd databus.gtkw
+		gtkwave output.vcd databus.gtkw
