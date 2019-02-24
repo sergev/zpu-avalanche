@@ -116,8 +116,7 @@
 `define RESET_VECTOR        32'h20  // reset entry point (can be moved up to 0x3c as per emulation table needs)
 
 // ---- zpu core optimizations/features ----
-`define ZPU_CORE_DEBUG
-//`define ZPU_CORE_DEBUG_MICROCODE
+`define ZPU_CORE_DEBUG_MICROCODE
 `define ASSERT_NON_ALIGNMENT    /* abort cpu in case of non-aligned memory access (only simulation) */
 
 `define ENABLE_CPU_INTERRUPTS   /* enable interrupts to cpu */
