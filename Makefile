@@ -18,7 +18,7 @@ work:           $(SOURCES)
 		vlog -sv $(SOURCES)
 
 run:            work
-		vsim -c -l run.log -do 'run 1us; quit' testbench +dump
+		vsim -c -l run.log -do 'run 1us; quit' testbench +dump +nowarn3116 | tee run.log
 
 view:
 		gtkwave output.vcd databus.gtkw

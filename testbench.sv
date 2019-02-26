@@ -105,6 +105,7 @@ initial begin
     // Start with reset active
     clk = 1;
     reset = 1;
+    i_interrupt = 0;
 
     // Hold reset for a while.
     #2 reset = 0;
